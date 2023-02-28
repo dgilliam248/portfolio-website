@@ -101,6 +101,7 @@ display: grid;
 grid-template-columns: 2fr 3fr;
 column-gap: 20px;
 border-bottom: 1px dashed #343434;
+padding: 25px 0;
 }
 .job-summary {
     padding: 20px;
