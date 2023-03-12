@@ -74,11 +74,15 @@ h3 {
 }
 /* Profile 
 --------------------------------------------------------------*/
-
-
+.container {
+    height: 95vh;
+    background:#2F3061;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 50% 100%, 0 80vh);
+}
 header {
     background: #2F3061;
-    color: #F7FFF7;}
+    color: #F7FFF7;
+}
 
 
 /* Projects 
