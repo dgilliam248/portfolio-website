@@ -192,6 +192,10 @@ footer {
     header, footer {
         text-align: center;
     }
+    .header-wrap {
+        font-size: 18px;
+        padding-top: 60px
+    }
     .project-item img {
         float: left;
         margin-right: 20px;
@@ -216,6 +220,9 @@ footer {
         /* padding: 40px; */
         padding-top: 20px
     }
+    .header-wrap {
+        padding-top: 40px;
+    }
     .contact-list a {
         padding: 5px;
     }
@@ -224,26 +231,26 @@ footer {
     header, footer {
         text-align: center;
     }
-    h1 {
-        font-weight: 100;
-        }
     .content-wrap {
         padding-bottom: 40px;
         /* line-height: 1; */
         }    
   }
-  @media screen and (max-width: 510px) {
-    .content-wrap {
+  @media screen and (max-width: 520px) {
+    .content-wrap { 
         padding: 10px;
         text-align: center;
         }
     h1 {
-            font-size: 84px;
-            line-height: .9;
-            padding: 10px;
+            font-size: 80px;
+            line-height: 1;
+            padding-bottom: 20px;
         }
     h2 {
             font-size: 60px;
-            line-height: .8;
+            line-height: 1;
+        }
+        .header-wrap {
+            padding-top: 40px;
         }
   }
