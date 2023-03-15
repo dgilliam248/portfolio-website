@@ -5,10 +5,11 @@
 html {
     /* border box fix */
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
-  *, *:before, *:after {
+  /* *, *:before, *:after {
     box-sizing: inherit;
-  }
+  } */
 
 body {
     color: #343434;
@@ -30,9 +31,11 @@ a:hover {
 h1 {
     font-size: 100px;
     line-height: 1.5;
+    padding-top: 60px;
 }
 h2 {
     font-size: 60px;
+    padding-top: 80px;
 }
 h1, h2 {
     font-family: 'Shadows Into Light', cursive;
@@ -117,7 +120,7 @@ header {
     cursor: pointer;
     background: #2f3061cc;
 }
- .btn:before {
+.btn:before {
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -180,38 +183,79 @@ footer {
 .contact-list {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: space-evenly;
   }
 .contact-list a {
     padding: 15px;
     display: inline-block;
   }
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-facebook {
+.fa-twitter {
     color: white;
+    text-decoration: none;
   }
-  .fa-twitter {
-    color: white;
+.fa-twitter:hover {
+    color: #00acee;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
   }
 .fa-linkedin {
-        color:;
-}
-.fa-linkedin {
     color: white;
+    text-decoration: none;
+}
+.fa-linkedin:hover {
+    color: #0072b1;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
 }
 .fa-github {
     color: white;
+    text-decoration: none;
   }
-  .fa {
+.fa-github:hover {
+    color: #967bb6;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+  }
+.fa-pinterest {
+    color: white;
+    text-decoration: none;
+  }
+.fa-pinterest:hover {
+    color: #c8232c;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+  }
+.fa-file-pdf-o {
+    color: white
+  }
+.fa-file-pdf-o:hover {
+    color: #ed2224;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+  }
+.fa {
     padding: 20px;
-    font-size: 30px;
+    font-size: 50px;
     width: 50px;
     text-align: center;
     justify-content: center;
     margin: 5px 2px;
   }
-  /*-----------------------*/
 
   /* Responsive 
   --------------------------------------------------------------*/
@@ -221,7 +265,7 @@ footer {
     }
     .header-wrap {
         font-size: 18px;
-        padding-top: 20px
+        padding-top: 40px
     }
     .project-item img {
         float: left;
@@ -236,7 +280,8 @@ footer {
         }
     .contact-list {
          display: flex;
-         justify-content: center;
+         justify-content: space-evenly;
+         padding: 60px;
         }
   }
   @media screen and (max-width:749px) and (max-height: 1279px) {
@@ -306,7 +351,7 @@ footer {
             font-size: medium;
             text-align: center;
         }
-        .contact-list {
+    .contact-list {
             text-align: center;
         }
     }
@@ -342,5 +387,15 @@ footer {
     }
     .contact-list {
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
+    .fa {
+        padding: 20px;
+        font-size: 40px;
+        width: 50px;
+        text-align: center;
+        justify-content: center;
+        margin: 5px 2px;
+      }
     }
