@@ -32,7 +32,7 @@ h1 {
     line-height: 1.5;
 }
 h2 {
-    font-size: 50px;
+    font-size: 60px;
 }
 h1, h2 {
     font-family: 'Shadows Into Light', cursive;
@@ -44,6 +44,7 @@ h3 {
 }
 .item-details h3 + p {
     font-style: italic;
+    padding-top: 10px;
 }
 .item-details h3 ~ p {
     margin: 0;
@@ -53,7 +54,7 @@ h3 {
     width: 85%;
     margin: 0 auto;
     padding: 40px 0;
-    padding-top: 160px;
+    padding-top: 0px;
 }
 h3 {
  margin-bottom: 0;
@@ -176,16 +177,14 @@ footer {
     background: #343434;
     color: #F7FFF7;
 }
-  .contact-list {
+.contact-list {
     list-style-type: none;
     padding: 0;
   }
-  .contact-list a {
+.contact-list a {
     padding: 15px;
     display: inline-block;
   }
-
-/*-----------------------
 .fa:hover {
     opacity: 0.7;
 }
@@ -196,9 +195,12 @@ footer {
     color: white;
   }
 .fa-linkedin {
-        color: white;
+        color:;
 }
-    .fa-instagram {
+.fa-linkedin {
+    color: white;
+}
+.fa-github {
     color: white;
   }
   .fa {
@@ -219,7 +221,7 @@ footer {
     }
     .header-wrap {
         font-size: 18px;
-        padding-top: 60px
+        padding-top: 20px
     }
     .project-item img {
         float: left;
@@ -246,49 +248,99 @@ footer {
         padding-top: 20px
     }
     .header-wrap {
-        padding-top: 40px;
+        padding-top: 60px;
+        font-size: large;
     }
     .contact-list a {
         padding: 5px;
     }
   }
-  @media screen and (max-width: 550px) and (max-height: 900px) {
+  @media screen and (max-width: 550px) and (max-height: 1080px) {
     header, footer {
         text-align: center;
     }
     .content-wrap {
         padding-bottom: 20px;
-        line-height: 1;
+        line-height: 1.5;
         }
     h1 {
         font-size: 72px;
         line-height: 1;
+        padding-top: 20px;
         padding-bottom: 20px;
     }
     h2 {
         font-size: 60px;
+        padding-bottom: 0px;
         text-align: center;
+        line-height: 1;
     }
     .header-wrap {
-        font-size: large;
+        font-size: medium;
+        padding-top: 10px;
+        padding-bottom: 0px;
     }
   }
   @media screen and (max-width: 450px) and (max-height: 920px) {
     .content-wrap { 
         padding: 10px;
-        text-align: center;
+        line-height: 1.5;
+        text-align: left;
         }
     h1 {
-            font-size: 60px;
+            font-size: 70px;
             line-height: 1;
-            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            text-align: center;
         }
     h2 {
             font-size: 48px;
             line-height: 1;
+            padding-top: 30px;
+            padding-bottom: 20px;
         }
     .header-wrap {
-            padding-top: 20px;
+            padding-top: 10px;
+            padding-bottom: 0px;
             font-size: medium;
+            text-align: center;
         }
-  }
+        .contact-list {
+            text-align: center;
+        }
+    }
+@media screen and (max-width: 380px) and (max-height: 720px) {
+    .content-wrap {
+            padding: 10px;
+            line-height: 1.5;
+        }
+    h1 {
+            font-size: 60px;
+            font-weight: 500;
+            padding-top: 20px;
+            padding-bottom: 0px;            
+        }
+    h2 {
+            font-size: 48px;
+            padding: 20px;
+            padding-bottom: 20px;
+            font-weight: 400;
+        }
+    .header-wrap {
+            /* font-size: 12px; */
+            padding-top: 0px;
+            padding-bottom: 0px;
+            font-size: 12px;
+            text-align: center;
+        }
+    .job-item {
+            line-height: 1.5;
+        }
+    .education {
+        padding-bottom: 40px;
+    }
+    .contact-list {
+        text-align: center;
+    }
+    }
