@@ -256,7 +256,10 @@ footer {
     justify-content: center;
     margin: 5px 2px;
   }
-
+  #resume-download {
+    scroll-margin-block-start: 110px;
+    scroll-margin-block-end: 110px;
+  }
   /* Responsive 
   --------------------------------------------------------------*/
   @media screen and (min-width:750px) {
