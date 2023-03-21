@@ -13,10 +13,10 @@ html {
 
 body {
     color: #343434;
-   margin: 0;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 16px;
-   line-height: 1.5;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 img {
     width: 300px
@@ -75,17 +75,39 @@ h3 {
 }
 .divider > section:last-of-type {
     border-style: none;
-}
+}*
 /* Profile 
 --------------------------------------------------------------*/
+
+* {
+    margin: 0;
+}
 .container {
+    width: 100%;
     height: 95vh;
-    background:#2F3061;
+    /* background:#2F3061; */
     top: 0;
     left: 0;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 50% 100%, 0 80vh);
-    /* border-radius: 0 0 50% 50%/0 0 100%; */
     overflow: hidden;
+    position: relative;
+}
+.container::before,
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.container::before {
+  background: #F7FFF7;
+}
+.container::after {
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 50% 100%, 0 80vh);
+  background: #2F3061;
 }
 header {
     background: #2F3061;
@@ -154,13 +176,19 @@ header {
     background: #A1C6D7;
 }
 .job-summary {
-    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 0px;
 }
 
 
 /* Education 
 --------------------------------------------------------------*/
-
+.education-item {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .education {
     background-image: url(/images/sharon-mccutcheon-unsplash.jpg);
@@ -193,6 +221,11 @@ footer {
 .fa-twitter {
     color: white;
     text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
   }
 .fa-twitter:hover {
     color: #00acee;
@@ -205,6 +238,11 @@ footer {
 .fa-linkedin {
     color: white;
     text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
 }
 .fa-linkedin:hover {
     color: #0072b1;
@@ -217,9 +255,14 @@ footer {
 .fa-github {
     color: white;
     text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
   }
 .fa-github:hover {
-    color: #967bb6;
+    color: #6e5494;
     cursor: pointer;
     -webkit-transition: color 0.5s ease-out;
     -moz-transition: color 0.5s ease-out;
@@ -229,6 +272,11 @@ footer {
 .fa-pinterest {
     color: white;
     text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
   }
 .fa-pinterest:hover {
     color: #c8232c;
@@ -239,7 +287,12 @@ footer {
     transition: color 0.5s ease-out;
   }
 .fa-file-pdf-o {
-    color: white
+    color: white;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
   }
 .fa-file-pdf-o:hover {
     color: #ed2224;
@@ -256,7 +309,10 @@ footer {
     justify-content: center;
     margin: 5px 2px;
   }
-
+  #resume-download {
+    scroll-margin-block-start: 110px;
+    scroll-margin-block-end: 110px;
+  }
   /* Responsive 
   --------------------------------------------------------------*/
   @media screen and (min-width:750px) {
