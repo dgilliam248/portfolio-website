@@ -179,7 +179,9 @@ header {
     padding-bottom: 30px;
     padding-top: 0px;
 }
-
+.work-headline {
+    padding-top: 10px;
+}
 
 /* Education 
 --------------------------------------------------------------*/
